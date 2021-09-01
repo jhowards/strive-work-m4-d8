@@ -11,7 +11,7 @@ class RowComponent extends React.Component {
   componentDidMount = async () => {
     try {
       let response = await fetch(
-        "http://www.omdbapi.com/?apikey=2cd49fbb&s=" + this.props.movie,
+        "http://www.omdbapi.com/?apikey=2cd49fbb&s=" + this.props.title,
         {}
       );
 
@@ -47,7 +47,7 @@ class RowComponent extends React.Component {
                 />
               </Form.Group>
             </Form>*/}
-        <h4 id="sagaName" className="ml-5 mt-4">{this.props.movie}</h4>
+        <h4 id="sagaName" className="ml-5 mt-4">{this.props.title}</h4>
         <Row xs={1} md={4} lg={6} xl={8} className="m-3">
           {this.state.movies.map((movie) => (
             <Col key={movie.imdbID} className="mb-3">

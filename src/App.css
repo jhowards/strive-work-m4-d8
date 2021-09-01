@@ -59,3 +59,7 @@
 body {
   background-color: #151515 !important;
 }
+
+.commentList{
+  font-size: 1.7rem;
+}

@@ -12,9 +12,9 @@ function App() {
     <div className="App">
       <Router>
       <MyNavbar />
-       <Route path="/" exact render={() => <RowComponent movie="Harry Potter" />} />
-       <Route path="/" exact render={() => <RowComponent movie="Lord Of The Rings" />} />
-       <Route path="/" exact render={() => <RowComponent movie="Mission Impossible" />} />
+       <Route path="/" exact render={() => <RowComponent title="Harry Potter" />} />
+       <Route path="/" exact render={() => <RowComponent title="Lord Of The Rings" />} />
+       <Route path="/" exact render={() => <RowComponent title="Mission Impossible" />} />
        <Route path="/detail/:id" exact component={ShowDetail} />
      </Router>
     </div>
