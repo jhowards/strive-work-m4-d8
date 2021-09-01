@@ -15,7 +15,7 @@ function App() {
        <Route path="/" exact render={() => <RowComponent movie="Harry Potter" />} />
        <Route path="/" exact render={() => <RowComponent movie="Lord Of The Rings" />} />
        <Route path="/" exact render={() => <RowComponent movie="Mission Impossible" />} />
-       <Route path="/detail:id" exact component={ShowDetail} />
+       <Route path="/detail/:id" exact component={ShowDetail} />
      </Router>
     </div>
   );

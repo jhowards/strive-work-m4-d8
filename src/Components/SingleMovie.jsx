@@ -18,7 +18,6 @@ class SingleMovie extends React.Component {
         "http://www.omdbapi.com/?apikey=2cd49fbb&i= " + this.props.id
       );
       if (response.ok) {
-        console.log("response ok!")
       let image = await response.json();
       this.setState({ Poster: image.Poster });
       this.setState({isLoading: false,})
