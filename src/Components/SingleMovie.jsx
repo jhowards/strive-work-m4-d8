@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Card, Spinner, Alert } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 class SingleMovie extends React.Component {
   state = {
@@ -48,9 +49,11 @@ class SingleMovie extends React.Component {
                         An error occurred!
                     </Alert>
                 }
+            <Link to={"/detail/" + this.props.id}>
         <Card id="netflixCard">
           <Card.Img id="cardImg" variant="top" src={this.state.Poster} />
         </Card>
+        </Link>
       </div>
     );
   }

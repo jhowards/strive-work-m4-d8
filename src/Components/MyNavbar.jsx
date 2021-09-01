@@ -2,11 +2,12 @@ import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { faBell } from '@fortawesome/free-solid-svg-icons'
-
+import { Link } from 'react-router-dom'
 
 const MyNavbar = () => {
     return (
         <Navbar expand="md">
+            <Link to="/">
         <Navbar.Brand href="#home">
         <img
                 alt=""
@@ -15,7 +16,9 @@ const MyNavbar = () => {
                 height="55"
                 className="d-inline-block align-top"
             />
+            
         </Navbar.Brand>
+        </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
